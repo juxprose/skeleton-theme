@@ -1,0 +1,108 @@
+/*==============================================================
+
+Variables
+
+File: SCSS Partial (/scss/generic/_variables.scss)
+Compiled to: css/global.css
+Created: 16/11/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: All variables
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Base
+  -------------------------------------------------------- */
+
+  $base-clr: rgb(0,31,143);
+  $base-fnt: "proxima-nova",sans-serif;
+  $base-fnt-size: 16px;
+  $base-line-height: 1.6;   
+  $space: 1em;
+
+
+/* Colors
+  -------------------------------------------------------- */ 
+
+  // Main
+  $clr-primary: $base-clr;
+  $clr-secondary: rgb(51,217,255);
+  $clr-tertiary: rgb(255,0,105);
+
+  // Tints - 70%
+  $clr-primary-tint70: rgba(0,31,143,0.7);
+  $clr-secondary-tint70: rgba(51,217,255,0.7);
+  $clr-tertiary-tint70: rgba(255,0,105,0.7);
+
+  // Tints - 30%
+  $clr-primary-tint30: rgba(102,102,102,0.3);
+  $clr-secondary-tint30: rgba(51,217,255,0.3);
+  $clr-tertiary-tint30: rgba(255,0,105,0.3);    
+  
+  // Buttons, highlights, backgrounds & keylines
+  $clr-site-bckgrd: $clr-primary;
+  $clr-utility: rgb(255,255,255);
+  $clr-inverse: rgb(255,255,255);
+  $clr-highlight: rgb(85,85,85);
+  $clr-keyline: $clr-primary-tint70;
+  $clr-bckgrd: $clr-secondary;
+  $clr-quiet: rgb(136,136,136);
+
+  // Success & Error
+  $clr-error: rgb(178,34,34);
+  $clr-success: rgb(34,139,34);
+
+
+/* Fonts
+  -------------------------------------------------------- */ 
+
+  // Sizes
+  @function em($target, $context: $base-fnt-size) {
+     @if $target == 0 { @return 0 }
+     @return $target / $context + 0em;
+  }
+
+  $fnt-giga: em(56px, 16px);
+  $fnt-xlrg: em(36px, 16px);
+  $fnt-lrg: em(26px, 16px);
+  $fnt-med: em(22px, 16px);
+  $fnt-reg: em(16px, 16px);
+  $fnt-sml: em(14px, 16px);
+  $fnt-xsml: em(12px, 16px);
+
+  // Weights
+  $fnt-weight-bold: 700;
+
+  // Heading weights
+  $fnt-weight-h1: 600;
+  $fnt-weight-h2: 600;
+  $fnt-weight-h3: 600;
+  $fnt-weight-h4: 600;
+  $fnt-weight-sml-headings: 600;
+
+
+/* Layout
+  -------------------------------------------------------- */ 
+
+  $max-width: 1200px;
+
+
+/* Breakpoints
+  -------------------------------------------------------- */
+
+  $bp-sml: "only screen and (max-width:320px)";
+  $bp-tab: "only screen and (min-width:321px) and (max-width:1023px)";
+  $bp-med: "only screen and (min-width:768px) and (max-width:1023px)";
+  $bp-lrg: "only screen and (min-width:1024px)";
+
+  $bp-sml-up: "only screen and (min-width:321px)";
+
+  //@media #{$small} {
+  //  background: red;
+  // }  

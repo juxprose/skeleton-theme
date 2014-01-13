@@ -1,0 +1,34 @@
+/*==============================================================
+
+Branding
+
+File: SCSS Partial (/scss/objects/_branding.scss)
+Compiled to: css/style.css
+Created: 16/11/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Branding elements like logo, colorschemes
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Logo
+  -------------------------------------------------------- */
+	
+	.site-logo {
+		background: $clr-secondary-tint30;
+		border-bottom: 5px solid $clr-primary;
+		margin-bottom: $space;
+		text-align: center;
+
+		img {
+			max-width: 85%;
+			margin-left: -15px;
+
+		}
+	}
